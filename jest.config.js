@@ -16,6 +16,7 @@ module.exports = {
         '!server/src/config/**',
         '!**/node_modules/**',
       ],
+      testTimeout: 20000 
     },
     
     // Client-side tests configuration
@@ -53,5 +54,5 @@ module.exports = {
       lines: 70,
     },
   },
-  testTimeout: 10000,
+  testTimeout: 20000 
 }; 

@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest --selectProjects server --testPathPattern=unit",
+    "test:integration": "jest --selectProjects server --testPathPattern=integration",
+    "setup-test-db": "node src/setupTestDb.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "mongodb-memory-server-core": "^10.1.4",
+    "supertest": "^7.1.3"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.1.4",
+    "mongoose": "^8.16.3"
+  }
+}
