@@ -1,6 +1,24 @@
+# Dependency directories
 node_modules/
+client/node_modules/
+server/node_modules/
+
+# Builds & dist
 dist/
-.env
+client/dist/
 coverage/
+client/coverage/
+server/coverage/
+
+# Environment files
+.env
+.env.local
+
+# Cypress artifacts
 cypress/screenshots/
 cypress/videos/
+
+# IDE/editor settings
+.vscode/
+*.log
+.DS_Store
